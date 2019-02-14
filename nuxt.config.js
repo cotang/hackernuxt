@@ -22,7 +22,7 @@ module.exports = {
   */
   css: [
     'tachyons/css/tachyons.min.css',
-    'tachyons-debug/css/tachyons-debug.min.css',
+    // 'tachyons-debug/css/tachyons-debug.min.css',
     '~/assets/main.css'
   ],
   build: {
@@ -40,6 +40,10 @@ module.exports = {
     //     })
     //   }
     // }
+  },
+  plugins: ["~/plugins/filters"],
+  router: {
+    linkActiveClass: "link-active"
   }
 }
 
